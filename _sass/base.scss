@@ -1,24 +1,23 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
 
 /**
  * Style variables
  */
-$base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       12.5px !default;
-$mobile-font-size:     12px !default;
-$base-line-height:     1.5 !default;
+$base-font-family:     sans-serif !default;
+$base-font-size:       20px !default;
+$mobile-font-size:     16px !default;
+$base-line-height:     1.4 !default;
 $container-width:      90% !default;
-$container-max-width:  600px !default;
+$container-max-width:  1024px !default;
 
 /**
  * Global
  */
 body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
-h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
+h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px; margin-bottom: 22px; font-weight: bold;  color: var(--text-color); }
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--link-color); }
-a:hover { color: var(--background-color); background-color: var(--base-color); }
+a:hover { text-decoration: underline;  color: var(--link-color); }
 @media only screen and (max-device-width: 500px) { * { font-size: $mobile-font-size !important; } }
 
 /**
@@ -31,11 +30,11 @@ header { margin-top: 25px;  margin-bottom: 10px; }
 header p { text-align: left;  margin: 0; }
 footer { margin-bottom: 20px; }
 
-/**
- * Highlight/Markup
- */
-::selection { background: var(--selection-background);  color: var(--selection-text); }
-::-moz-selection { background: var(--selection-background);  color: var(--selection-text); }
+// /**
+//  * Highlight/Markup
+//  */
+// ::selection { background: var(--selection-background);  color: var(--selection-text); }
+// ::-moz-selection { background: var(--selection-background);  color: var(--selection-text); }
 
 /**
  * Lists
@@ -52,6 +51,23 @@ footer { margin-bottom: 20px; }
 .menu ul li { display: inline;  margin-left: 10px; }
 .menu ul li a { text-decoration: none;  color: var(--text-color); }
 .menu ul li a:hover { text-decoration: none; color: var(--background-color); background-color: var(--base-color); }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    h1 {
+      margin: 0;
+      order: 1; 
+    }
+  
+    ul {
+      margin-left: auto; 
+      order: 2; 
+    }
+  }
+  
 
 /**
  * Form
@@ -131,3 +147,48 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+  
+.post-decoration {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    display: block;
+    padding: 10px 0;
+    border-radius: 5px;
+    
+    &::before {
+      content: "🙡🙢";
+      color: rgba(128, 128, 128, 0.8);
+    }
+  }
+
+  #home-list {
+    li {
+      list-style: none;
+  
+      &:before {
+        display: none;
+      }
+      
+      display: flex;
+      align-items: center;  
+      margin-bottom: 16px;
+  
+      .date {
+        flex: 1;  
+        padding-right: 20px;  
+      }
+  
+      a {
+        flex: 6;  
+      }
+    }
+  }
+  
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  abbr {
+    text-decoration: none;
+  }

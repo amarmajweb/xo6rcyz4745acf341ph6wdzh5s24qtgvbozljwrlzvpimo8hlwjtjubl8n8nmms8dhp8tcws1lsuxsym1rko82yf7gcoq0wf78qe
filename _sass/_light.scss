@@ -4,13 +4,13 @@
 
 :root {
   --base-color: #000;
-  --border: dashed 1px rgba(0, 0, 0, 1);
-  --selection-background: rgba(0, 0, 0, 0.99);
-  --selection-text: #FFF;
+  --border: solid 3px rgba(128, 128, 128, 0.8);
+  // --selection-background: rgba(0, 0, 0, 0.99);
+  // --selection-text: #FFF;
   --background-color: #FFF;
   --text-color: var(--base-color);
   --placeholder-color: var(--base-color);
-  --link-color: var(--base-color);
+  --link-color: #0000FF;
   --code-color-1: #aaaaaa;
   --code-color-2: #ffffcc;
   --code-color-3: #F00000;
