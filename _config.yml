@@ -11,8 +11,8 @@ style: light # dark (default) or light
 #listen_for_clients_preferred_style: true # true or false (default)
 
 max_width: 1024px
-homepage_title: "Álvaro Martínez Majado"
-append_title: "| Web d'Álvaro Martínez Majado"
+homepage_title: "Alvaro Martinez Majado"
+append_title: "| Alvaro Martinez Majado"
 
 plugins:
   - jekyll-seo-tag
