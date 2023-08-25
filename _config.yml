@@ -12,7 +12,7 @@ style: light # dark (default) or light
 
 max_width: 1024px
 homepage_title: "Álvaro Martínez Majado"
-append_title: " 🙡🙢 Web d'Álvaro Martínez Majado"
+append_title: "| Web d'Álvaro Martínez Majado"
 
 plugins:
   - jekyll-seo-tag
