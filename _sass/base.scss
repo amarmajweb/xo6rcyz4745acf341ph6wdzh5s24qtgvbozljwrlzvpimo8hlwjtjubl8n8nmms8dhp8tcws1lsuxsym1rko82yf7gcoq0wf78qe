@@ -157,7 +157,7 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
     border-radius: 5px;
     
     &::before {
-      content: "🙡🙢";
+      content: "#~";
       color: rgba(128, 128, 128, 0.8);
     }
   }
@@ -192,3 +192,7 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
   abbr {
     text-decoration: none;
   }
+
+img {
+  max-width: 500px;
+}
